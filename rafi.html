@@ -1,17 +1,17 @@
 <!-- rafis webpage -->
 <!doctype html>
 <html lang="en">
-  
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
     <!-- Font Awesome -->
@@ -24,19 +24,19 @@
     <title>Predicting and Avoiding Catastrophes</title>
 
     <style>
-        .padding-content 
+        .padding-content
         {
             padding-left: 15%;
             padding-right: 15%;
         }
 
-        .reference 
+        .reference
         {
             font-size: 85%;
         }
     </style>
 </head>
-  
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">Home</a>
@@ -60,7 +60,7 @@
             </ul>
         </div>
     </nav>
-    
+
     <div class="container padding-content mt-5">
         <h1 class="border-bottom border-4 border-secondary pt-5 pb-5 fw-bolder text-center">
             Predicting and Avoiding Catastrophes
@@ -107,85 +107,85 @@
     <div class="container padding-content">
         <h4>Predicting Wildfires with CAT Scans</h4>
         <p>
-            Stanford engineers have used CAT scanners, typically used for examining the interior of a patient’s body in 
-            medicine, to study smouldering. This has allowed them to develop computer models capable of predicting 
-            where a wildfire may start next. The obvious benefits of this work include helping firefighters allocate 
+            Stanford engineers have used CAT scanners, typically used for examining the interior of a patient’s body in
+            medicine, to study smouldering. This has allowed them to develop computer models capable of predicting
+            where a wildfire may start next. The obvious benefits of this work include helping firefighters allocate
             their resources more efficiently, consequently reducing the loss of lives and properties due to wildfires.
         </p>
 
         <p>
-            Smouldering is the process of burning slowly where smoke is present without a flame, and the cause of consumption 
-            of more than half of plant matter which ends up burnt in wildfires <sup>[1]</sup>. Moreover, embers produced by 
-            smouldering logs can ignite fires in unsuspected areas when carried by hot updrafts, accelerating the spread of 
-            the fires, and have the potential to restart fires as smouldering can take place several days after 
-            flaming <sup>[2]</sup>. 
+            Smouldering is the process of burning slowly where smoke is present without a flame, and the cause of consumption
+            of more than half of plant matter which ends up burnt in wildfires <sup>[1]</sup>. Moreover, embers produced by
+            smouldering logs can ignite fires in unsuspected areas when carried by hot updrafts, accelerating the spread of
+            the fires, and have the potential to restart fires as smouldering can take place several days after
+            flaming <sup>[2]</sup>.
         </p>
 
         <p>
-            XCT (X-ray Computer Tomography) was used by Emeric Boigné to develop a new analytical method to study smouldering. 
-            Using this method provides a three-dimensional image of the material’s interior structure at a resolution of 135 
-            μm <sup>[3, 4]</sup>. 
+            XCT (X-ray Computer Tomography) was used by Emeric Boigné to develop a new analytical method to study smouldering.
+            Using this method provides a three-dimensional image of the material’s interior structure at a resolution of 135
+            μm <sup>[3, 4]</sup>.
         </p>
 
         <p>
-            Through studying wood samples from around the country, the researchers aimed to compile a database of the 
-            different materials and their burn rates. Collecting this data then allowed Matt Bonanni (Stanford graduate) 
-            to use it alongside land contour data (as well as other relevant data such as the air humidity and wind patterns) 
-            to build a model for predicting fires. The simulation runs through many permuatations of different variables in 
-            order to predict how a fire is most likely to spread.  
+            Through studying wood samples from around the country, the researchers aimed to compile a database of the
+            different materials and their burn rates. Collecting this data then allowed Matt Bonanni (Stanford graduate)
+            to use it alongside land contour data (as well as other relevant data such as the air humidity and wind patterns)
+            to build a model for predicting fires. The simulation runs through many permuatations of different variables in
+            order to predict how a fire is most likely to spread.
         </p>
 
         <!--Quote-->
         <p class="text-muted py-3 px-5"><em>
-            “Smoldering depends strongly on the heat exchange with the surrounding environment,	ambient oxygen concentration, 
+            “Smoldering depends strongly on the heat exchange with the surrounding environment,	ambient oxygen concentration,
             permeability, and density, as well as the content of moisture and inorganic material in the fuel" <sup>[4]</sup>.
         </p></em>
 
         <p>
-            These simulations cover forest-level scales, therefore running them requires a great amount of processing power. 
-            For this reason, Tensor Flow, an open-source framework developed for use in machine learning, was adopted which 
-            vastly improved the performance of the model as many simulations were able to be completed simultaneously <sup>[3]</sup>.  
+            These simulations cover forest-level scales, therefore running them requires a great amount of processing power.
+            For this reason, Tensor Flow, an open-source framework developed for use in machine learning, was adopted which
+            vastly improved the performance of the model as many simulations were able to be completed simultaneously <sup>[3]</sup>.
         </p>
 
         <p>
-            As the model was developed, simulations that took a day to complete before can now be run in close to real-time 
-            <sup>[3]</sup>.  Improving the model to be able to predict the spread of fires in such a short time means that it can 
-            become fit for practical purposes where it can aid firefighters and influence their firefighting strategies. 
+            As the model was developed, simulations that took a day to complete before can now be run in close to real-time
+            <sup>[3]</sup>.  Improving the model to be able to predict the spread of fires in such a short time means that it can
+            become fit for practical purposes where it can aid firefighters and influence their firefighting strategies.
         </p>
 
         <p>
-            The team of researchers is planning to continue the development of the model and refinement of their databases 
-            as well as exploring “zombie fires” using the newly developed technique <sup>[3]</sup>. 
+            The team of researchers is planning to continue the development of the model and refinement of their databases
+            as well as exploring “zombie fires” using the newly developed technique <sup>[3]</sup>.
         </p>
 
         <h5 class="border-bottom border-4 border-secondary pt-5 pb-4 text-center">References:</h5>
         <p class = "reference pt-4">
-            [1] G. Rein. <a href = https://link.springer.com/chapter/10.1007%2F978-1-4939-2565-0_19><em>SFPR Handbook of 
-            Fire Protection Engineering</em></a> fifth ed.: Springer, 2016, pp. 581-603. Cited in: E. Boigné, N.R. Bennett, 
+            [1] G. Rein. <a href = https://link.springer.com/chapter/10.1007%2F978-1-4939-2565-0_19><em>SFPR Handbook of
+            Fire Protection Engineering</em></a> fifth ed.: Springer, 2016, pp. 581-603. Cited in: E. Boigné, N.R. Bennett,
             A. Wang, K. Mohri, M. Ihme. <a href = https://www.sciencedirect.com/science/article/pii/S1540748920301255?via%3Dihub>
-            Simultaneous in-situ measurements of gas temperature and pyrolysis of biomass smoldering via X-ray computed 
-            tomography</a>. <em>Proceedings of the Combustion Institute</em> 2020; 38: 3899 – 3907 
-        </p>
-
-        <p class = "reference">
-            [2] E.R.C Rabelo, C.A.G. Veras, J.A. Carvalho Jr., E.C. Alvarado, D.V. Sandberg, J.C. Santos. 
-            <a href = https://www.sciencedirect.com/science/article/pii/S1352231003008549><em>Log smoldering after an 
-            amazonian deforestation fire</em></a>. Atmospheric Environment 2004; 38: 203 - 211. Cited in: E. Boigné, 
-            N.R. Bennett, A. Wang, K. Mohri, M. Ihme. <a href = https://www.sciencedirect.com/science/article/pii/S1540748920301255?via%3Dihub>
-            Simultaneous in-situ measurements of gas temperature and pyrolysis of biomass smoldering via X-ray computed 
+            Simultaneous in-situ measurements of gas temperature and pyrolysis of biomass smoldering via X-ray computed
             tomography</a>. <em>Proceedings of the Combustion Institute</em> 2020; 38: 3899 – 3907
         </p>
 
         <p class = "reference">
-            [3] Andrew Myres. <a href = https://news.stanford.edu/2020/09/22/predicting-wildfires-cat-scans><em>Stanford 
+            [2] E.R.C Rabelo, C.A.G. Veras, J.A. Carvalho Jr., E.C. Alvarado, D.V. Sandberg, J.C. Santos.
+            <a href = https://www.sciencedirect.com/science/article/pii/S1352231003008549><em>Log smoldering after an
+            amazonian deforestation fire</em></a>. Atmospheric Environment 2004; 38: 203 - 211. Cited in: E. Boigné,
+            N.R. Bennett, A. Wang, K. Mohri, M. Ihme. <a href = https://www.sciencedirect.com/science/article/pii/S1540748920301255?via%3Dihub>
+            Simultaneous in-situ measurements of gas temperature and pyrolysis of biomass smoldering via X-ray computed
+            tomography</a>. <em>Proceedings of the Combustion Institute</em> 2020; 38: 3899 – 3907
+        </p>
+
+        <p class = "reference">
+            [3] Andrew Myres. <a href = https://news.stanford.edu/2020/09/22/predicting-wildfires-cat-scans><em>Stanford
             researchers combine CAT scans and advanced computing t fight wildfires</em></a>. Stanford Report, 2020. 29/10/2021
         </p>
 
         <p class = "reference">
             [4] E. Boigné, N.R. Bennett, A. Wang, K. Mohri, M. Ihme. <a href = https://www.sciencedirect.com/science/article/pii/S1540748920301255?via%3Dihub>
-            Simultaneous in-situ measurements of gas temperature and pyrolysis of biomass smoldering via X-ray computed 
+            Simultaneous in-situ measurements of gas temperature and pyrolysis of biomass smoldering via X-ray computed
             tomography</a>. <em>Proceedings of the Combustion Institute</em> 2020; 38: 3899 – 3907
-        </p> 
+        </p>
     </div>
 
     <!-- Footer -->
@@ -223,10 +223,10 @@
                 <i class="fas fa-user-alt me-3"></i>About Me
                 </h6>
                 <p>
-                Please enter here! Aaron! <br>
-                This is a sample introduction. This is a sample introduction.
-                This is a sample introduction. This is a sample introduction.
-                This is a sample introduction. This is a sample introduction.
+                  Rafi is a currently a level 1 Computer Science Student at Durham University.
+                  She enjoys drawing art during her free time.
+                  She is passion in Computer Science and hopes to continue providing positive
+                  contribution to the society with her computing knowledge.
                 </p>
             </div>
             <!-- Grid column -->
@@ -297,6 +297,6 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-    
+
   </body>
 </html>
