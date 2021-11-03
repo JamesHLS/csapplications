@@ -104,15 +104,20 @@
         </div>
     </div>
 
+
     <div class="container padding-content">
         <h4>Predicting Wildfires with CAT Scans</h4>
         <p>
-            Stanford engineers have used CAT scanners, typically used for examining the interior of a patient’s body in
-            medicine, to study smouldering. This has allowed them to develop computer models capable of predicting
-            where a wildfire may start next. The obvious benefits of this work include helping firefighters allocate
-            their resources more efficiently, consequently reducing the loss of lives and properties due to wildfires.
+            CAT scanners are an imaging technique normally used in medicine to peer inside a patient’s body - helping 
+            in diagnosing them. Despite their traditional use in medicine, due to their ability to penetrate a material, 
+            they are also useful for studying the interior of wood – as established by Stanford engineers. The team of 
+            engineers have used the CAT scanners to investigate smouldering in depth which has allowed them to develop 
+            computer models capable of predicting where a wildfire may start next. The obvious benefits of this work 
+            include helping firefighters allocate their resources more efficiently, consequently reducing the loss of 
+            lives and properties due to wildfires. 
         </p>
-
+        <!---image not working (cant add text under image)-->
+        <!--<img src="..." class="m-3 shadow float-sm-start" width = "55%" alt = "...">-->
         <p>
             Smouldering is the process of burning slowly where smoke is present without a flame, and the cause of consumption
             of more than half of plant matter which ends up burnt in wildfires <sup>[1]</sup>. Moreover, embers produced by
@@ -120,44 +125,62 @@
             the fires, and have the potential to restart fires as smouldering can take place several days after
             flaming <sup>[2]</sup>.
         </p>
-
         <p>
             XCT (X-ray Computer Tomography) was used by Emeric Boigné to develop a new analytical method to study smouldering.
             Using this method provides a three-dimensional image of the material’s interior structure at a resolution of 135
             μm <sup>[3, 4]</sup>.
         </p>
-
         <p>
-            Through studying wood samples from around the country, the researchers aimed to compile a database of the
-            different materials and their burn rates. Collecting this data then allowed Matt Bonanni (Stanford graduate)
-            to use it alongside land contour data (as well as other relevant data such as the air humidity and wind patterns)
-            to build a model for predicting fires. The simulation runs through many permuatations of different variables in
-            order to predict how a fire is most likely to spread.
+            Through studying wood samples from around the country, the researchers aimed to compile a database of a range 
+            of materials and their burn rates. Collecting this data then allowed Matt Bonanni (Stanford graduate) to use 
+            it alongside land contour data (as well as other relevant data such as the air humidity and wind patterns) 
+            to build a model for predicting fires. The simulation runs through many permutations of different variables 
+            to predict how a fire is most likely to spread.
         </p>
-
         <!--Quote-->
         <p class="text-muted py-3 px-5"><em>
             “Smoldering depends strongly on the heat exchange with the surrounding environment,	ambient oxygen concentration,
             permeability, and density, as well as the content of moisture and inorganic material in the fuel" <sup>[4]</sup>.
         </p></em>
-
         <p>
             These simulations cover forest-level scales, therefore running them requires a great amount of processing power.
             For this reason, Tensor Flow, an open-source framework developed for use in machine learning, was adopted which
             vastly improved the performance of the model as many simulations were able to be completed simultaneously <sup>[3]</sup>.
         </p>
-
         <p>
             As the model was developed, simulations that took a day to complete before can now be run in close to real-time
             <sup>[3]</sup>.  Improving the model to be able to predict the spread of fires in such a short time means that it can
-            become fit for practical purposes where it can aid firefighters and influence their firefighting strategies.
+            become fit for practical purposes and we can start to experience the benefits it brings to our society as it aids 
+            firefighters and influences their firefighting strategies.
         </p>
 
+        <h4>Modelling Tsunamis with Supercomputers </h4>
         <p>
-            The team of researchers is planning to continue the development of the model and refinement of their databases
-            as well as exploring “zombie fires” using the newly developed technique <sup>[3]</sup>.
+            Fugaku has been used to develop an AI computer model for predicting tsunami flooding. Being able to make 
+            such accurate predictions in real time is greatly beneficial in helping disaster management. It will aid 
+            residents to be evacuated in the most effective way as well as planning the effects on infrastructure 
+            <sup>[5]</sup>. 
         </p>
-
+        <p>
+            Normally tsunami predictions have been made by comparing the tsunami's earthquake occurrence conditions 
+            with the data of the most similar observations from a compiled database of simulations run in advance 
+            <sup>[7]</sup>. Therefore, predicting the effects of a tsunami in this way relies makes it difficult to 
+            implement a feasible prediction system as it incorporates supercomputers and database searches on a large 
+            scale. 
+        </p>
+        <p>
+            By putting the supercomputer’s power to use, the research team in Fujitsu, Tohoku University, and the 
+            University of Tokyo's Earthquake Research Institute - allowing to simulate 20,000 scenarios for training 
+            the AI model <sup>[6]</sup> which would be much more feasible to run. 
+        </p>
+        <p>
+            Waveform data and data on the resulting flooding was used by a deep learning algorithm. This training 
+            allowed the team to produce an AI model capable of predicting tsunami flooding with high accuracy in 
+            near real-time. While the AI has to be trained on the supercomputer, the model can be run on a PC, 
+            allowing observational waveform data to be input into the model to produce predictions on the flooding 
+            that will take place <sup>[6]</sup>. 
+        </p>
+        
         <h5 class="border-bottom border-4 border-secondary pt-5 pb-4 text-center">References:</h5>
         <p class = "reference pt-4">
             [1] G. Rein. <a href = https://link.springer.com/chapter/10.1007%2F978-1-4939-2565-0_19><em>SFPR Handbook of
@@ -166,7 +189,6 @@
             Simultaneous in-situ measurements of gas temperature and pyrolysis of biomass smoldering via X-ray computed
             tomography</a>. <em>Proceedings of the Combustion Institute</em> 2020; 38: 3899 – 3907
         </p>
-
         <p class = "reference">
             [2] E.R.C Rabelo, C.A.G. Veras, J.A. Carvalho Jr., E.C. Alvarado, D.V. Sandberg, J.C. Santos.
             <a href = https://www.sciencedirect.com/science/article/pii/S1352231003008549><em>Log smoldering after an
@@ -175,16 +197,28 @@
             Simultaneous in-situ measurements of gas temperature and pyrolysis of biomass smoldering via X-ray computed
             tomography</a>. <em>Proceedings of the Combustion Institute</em> 2020; 38: 3899 – 3907
         </p>
-
         <p class = "reference">
-            [3] Andrew Myres. <a href = https://news.stanford.edu/2020/09/22/predicting-wildfires-cat-scans><em>Stanford
+            [3] A. Myres. <a href = https://news.stanford.edu/2020/09/22/predicting-wildfires-cat-scans><em>Stanford
             researchers combine CAT scans and advanced computing t fight wildfires</em></a>. Stanford Report, 2020. 29/10/2021
         </p>
-
         <p class = "reference">
             [4] E. Boigné, N.R. Bennett, A. Wang, K. Mohri, M. Ihme. <a href = https://www.sciencedirect.com/science/article/pii/S1540748920301255?via%3Dihub>
             Simultaneous in-situ measurements of gas temperature and pyrolysis of biomass smoldering via X-ray computed
             tomography</a>. <em>Proceedings of the Combustion Institute</em> 2020; 38: 3899 – 3907
+        </p>
+        <p class = "reference">
+            [5] L. Magloff. <a href = https://www.springwise.com/innovation/computing-tech/supercomputer-ai-tsunami-prediction>
+            <em>World’s Fastest Supercomputer Used to Model Tsunamis</em></a>. Springwise, 2021. 03/11/2021 
+        </p>
+        <p class = "reference">
+            [6] N. Lavars. <a href = https://newatlas.com/environment/worlds-fastest-supercomputer-artificial-intelligence-predicts-tsunami-flooding>
+            <em>Supercomputer-developed AI predicts tsunami flooding in real-time on a PC</em></a>. New Atlas, 2021. 03/11/2021 
+        </p>
+        <p class = "reference">
+            [7] International Research Institute of Disaster Science, Tohoku University, Earthquake Research Institute, 
+            The University of Tokyo, Fujitsu Laboratories Ltd. <a href = https://www.fujitsu.com/global/about/resources/news/press-releases/2021/0216-01.html>
+            <em>Fujitsu Leverages World’s Fastest Supercomputer ‘Fugaku’ and AI to Deliver Real-Time Tsunami Prediction 
+            in Joint Project</em></a>. Fujitsu Limited, 2021. 03/11/2021 
         </p>
     </div>
 
