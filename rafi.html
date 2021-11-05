@@ -127,7 +127,7 @@
         <p class="text-muted py-3 px-5"><em>
             “Smoldering depends strongly on the heat exchange with the surrounding environment,	ambient oxygen concentration,
             permeability, and density, as well as the content of moisture and inorganic material in the fuel" <sup>[4]</sup>.
-        </p></em>
+        </p></em>     <!-- p tag is closed before em tag. -->
         <p>
             These simulations cover forest-level scales, therefore running them requires a great amount of processing power.
             For this reason, Tensor Flow, an open-source framework developed for use in machine learning, was adopted which
@@ -265,6 +265,8 @@
                 </p>
             </div>
             <!-- Grid column -->
+
+            <!-- Style tag should not be in body. It should be included in head or linked to an external stylesheet -->
 
             <!-- Style for button animation -->
             <style>
